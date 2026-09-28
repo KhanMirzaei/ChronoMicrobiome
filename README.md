@@ -7,9 +7,7 @@ longitudinal bacterial and optional phage abundance tables. It fits exploratory
 exposure-associated models, describes observed persistence and return toward
 baseline, and summarizes supplied phage–host links against repeated measurements.
 
-**Research preview:** tested on synthetic data; not externally validated on a real
-cohort. The included semaglutide/Ozempic application is entirely simulated and
-contains no evidence about actual medication effects.
+**Research preview:** tested on synthetic data; the included application is entirely simulated and contains no evidence about actual medication effects.
 
 The display name is **ChronoµBiome** (pronounced “Chrono-micro-biome”). The R
 package and command use the ASCII name `chronomicrobiome`. This project is
