@@ -5,3 +5,10 @@
 results/
 _freeze/
 .quarto/
+.DS_Store
+/site/
+/my-results/
+/my-synthetic-study/
+/releases/
+**/report.html
+**/report-body.html

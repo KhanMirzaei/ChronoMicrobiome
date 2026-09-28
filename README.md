@@ -15,8 +15,6 @@ independent of the unrelated [Chronobiome research project](https://chronobiome.
 
 [![R package checks](https://github.com/KhanMirzaei/ChronoMicrobiome/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/KhanMirzaei/ChronoMicrobiome/actions/workflows/R-CMD-check.yaml)
 
-**[Explore the synthetic demo online](https://khanmirzaei.github.io/ChronoMicrobiome/)**
-
 ## Get the source
 
 ```bash
@@ -100,6 +98,21 @@ This release supports **one ordered exposure episode** and either one cohort or
 two fixed study groups. Medication, antibiotic, and diet studies use the same
 configuration interface. In v0.1, dose and adherence can be recorded in metadata
 but do not receive a dedicated dose-response analysis.
+
+## Repository contents
+
+This repository contains source code and reproducible example inputs only.
+Generated reports, result tables, website builds, and raw validation logs are
+not committed. Generate your own demo report with the quick-start command above.
+
+- `R/`, `NAMESPACE`, `DESCRIPTION`, `man/`: package code and R help.
+- `bin/`: source command-line launcher.
+- `inst/extdata/`: small synthetic input dataset and study configuration.
+- `inst/report/`: templates and styles needed to generate reports.
+- `tests/`: automated scientific and workflow checks.
+- `docs/`: methods, semaglutide study design, and validation summary.
+- `.github/workflows/`: automated package checks.
+- License and citation files: reuse and attribution information.
 
 ## Input format
 

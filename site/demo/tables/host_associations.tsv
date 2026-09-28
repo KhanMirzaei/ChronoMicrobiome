@@ -1,5 +1,0 @@
-"phage_id"	"host_id"	"confidence"	"evidence"	"status"	"n_participants"	"mean_within_person_rho"	"ci_lower"	"ci_upper"	"included_primary"	"included_high_only"
-"Phage_01"	"Bacterium_01"	"high"	"Synthetic integration evidence"	"exploratory"	32	0.151893939393939	0.0432859848484849	0.259725378787879	TRUE	TRUE
-"Phage_02"	"Bacterium_02"	"high"	"Synthetic CRISPR evidence"	"exploratory"	32	0.0102272727272727	-0.121628787878788	0.148106060606061	TRUE	TRUE
-"Phage_03"	"Bacterium_03"	"medium"	"Synthetic genus-level prediction"	"exploratory"	32	-0.0435606060606061	-0.171126893939394	0.0687594696969697	TRUE	FALSE
-"Phage_04"	"Bacterium_04"	"low"	"Synthetic weak prediction"	"exploratory"	32	0.031060606060606	-0.0567140151515151	0.123683712121212	FALSE	FALSE

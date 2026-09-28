@@ -1,0 +1,3 @@
+# Generated reports are outputs, not implementation code.
+**/report.html linguist-generated=true
+**/report-body.html linguist-generated=true
