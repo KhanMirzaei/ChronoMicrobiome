@@ -18,6 +18,12 @@ jobs:
         with:
           extra-packages: any::rcmdcheck
           needs: check
+      - name: Check source launcher in a path containing spaces
+        shell: bash
+        run: |
+          mkdir -p "$RUNNER_TEMP/chrono path test"
+          cp -R . "$RUNNER_TEMP/chrono path test/ChronoMicrobiome"
+          Rscript "$RUNNER_TEMP/chrono path test/ChronoMicrobiome/bin/chronomicrobiome" doctor
       - uses: r-lib/actions/check-r-package@v2
         with:
           args: 'c("--no-manual")'
