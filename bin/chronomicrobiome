@@ -1,0 +1,11 @@
+#!/usr/bin/env Rscript
+file_arg <- grep("^--file=",commandArgs(trailingOnly=FALSE),value=TRUE)
+if (!length(file_arg)) stop("Run this launcher with Rscript or directly.",call.=FALSE)
+root <- dirname(dirname(normalizePath(sub("^--file=","",file_arg[1]),mustWork=TRUE)))
+options(chronomicrobiome.root=root)
+env <- new.env(parent=globalenv())
+for (f in sort(list.files(file.path(root,"R"),pattern="\\.R$",full.names=TRUE))) sys.source(f,env)
+tryCatch(env$chronomicrobiome_cli(),error=function(e) {
+  cat("Chrono\u00b5Biome error: ",conditionMessage(e),"\n",sep="",file=stderr())
+  quit(status=1L)
+})

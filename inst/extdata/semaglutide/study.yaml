@@ -1,0 +1,34 @@
+title: 'Semaglutide exposure: synthetic study'
+synthetic: yes
+metadata: metadata.tsv
+bacteria: bacteria.tsv
+phages: phages.tsv
+host_links: host_links.tsv
+output: results
+abundance_scale: counts
+phase_levels:
+- baseline
+- treatment
+- followup
+group_reference: comparator
+covariates:
+- age_baseline
+- bmi_baseline
+- metformin_baseline
+sensitivity_covariates:
+- weight_change_pct
+- fiber_change_g_day
+min_prevalence: 0.1
+pseudocount: 1.0e-06
+correlation: independent
+time_unit_days: 7.0
+min_baseline_samples: 2
+recovery_threshold: 0.15
+recovery_consecutive: 2
+detection_threshold: 0.0
+host_confidence:
+- high
+- medium
+bootstrap_replicates: 500
+seed: 20260928
+report_engine: auto

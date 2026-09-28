@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the exact version."
+title: "ChronoµBiome: Human microbiome dynamics and responses to exposures"
+type: software
+authors:
+  - family-names: "Khan Mirzaei"
+    given-names: "Mohammadali"
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/KhanMirzaei/ChronoMicrobiome"

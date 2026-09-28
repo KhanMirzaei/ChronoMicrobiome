@@ -1,0 +1,19 @@
+Package: chronomicrobiome
+Type: Package
+Title: Longitudinal Human Microbiome and Exposure Analysis
+Version: 0.1.0
+Authors@R: person("Mohammadali", "Khan Mirzaei", role = c("aut", "cre"), email = "39282247+KhanMirzaei@users.noreply.github.com")
+Description: An exploratory workflow for longitudinal microbial abundance
+    tables, exposure-associated changes, persistence, return toward baseline,
+    and evidence-supported phage-host associations. Fits random-intercept
+    linear mixed models to centered log-ratio abundances and produces
+    auditable tables, figures, and an offline HTML report. Includes a
+    fully synthetic medication-exposure demonstration.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.1.0)
+Imports: nlme, ggplot2, yaml, jsonlite, stats, utils, tools
+Suggests: testthat (>= 3.0.0)
+Config/testthat/edition: 3
+URL: https://github.com/KhanMirzaei/ChronoMicrobiome
+BugReports: https://github.com/KhanMirzaei/ChronoMicrobiome/issues

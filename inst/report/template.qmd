@@ -1,0 +1,12 @@
+---
+title: "ChronoµBiome analysis"
+format:
+  html:
+    theme: none
+    embed-resources: true
+    css: report.css
+    page-layout: full
+    title-block-banner: false
+    include-before-body: report-body.html
+---
+

@@ -1,0 +1,25 @@
+test_that("end-to-end report, provenance and immutable output protection work", {
+  f <- fixture(); on.exit(unlink(f$root,recursive=TRUE))
+  edit_config(f,report_engine="builtin",sensitivity_covariates=character())
+  output <- file.path(f$root,"output with spaces")
+  result <- run_study(f$path,output)
+  expect_true(file.exists(result$report))
+  html <- paste(readLines(result$report,warn=FALSE),collapse="\n")
+  expect_match(html,"Synthetic demonstration",fixed=TRUE)
+  expect_match(html,"data:image/png;base64,",fixed=TRUE)
+  expect_true(file.exists(file.path(output,"tables","model_residuals.tsv")))
+  p <- jsonlite::read_json(file.path(output,"provenance.json"))
+  expect_identical(p$status,"complete")
+  expect_identical(p$synthetic,TRUE)
+  expect_identical(p$report_engine,"builtin")
+  expect_equal(nchar(p$input_md5$bacteria),32L)
+  expect_s3_class(validate_study(file.path(output,"config-resolved.yaml")),"chronomicrobiome_study")
+  expect_error(run_study(f$path,output),"never overwritten")
+})
+
+test_that("HTML content is escaped and CLI typos do not start a run", {
+  expect_identical(chronomicrobiome:::html_escape('<script>"x" & y</script>'),
+    '&lt;script&gt;&quot;x&quot; &amp; y&lt;/script&gt;')
+  expect_error(chronomicrobiome_cli(c("run","--confgi","x.yaml")),"Unknown or repeated")
+  expect_error(chronomicrobiome_cli(c("run","--config")),"Missing value")
+})

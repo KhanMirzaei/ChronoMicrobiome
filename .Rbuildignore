@@ -1,0 +1,10 @@
+^bin$
+^docs$
+^README.md$
+^\.gitignore$
+^\.Rbuildignore$
+^\.github$
+^site$
+^LICENSE.md$
+^CITATION.cff$
+^releases$

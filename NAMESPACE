@@ -1,0 +1,5 @@
+export(run_study)
+export(validate_study)
+export(make_demo)
+export(chronomicrobiome_cli)
+importFrom(stats,setNames)

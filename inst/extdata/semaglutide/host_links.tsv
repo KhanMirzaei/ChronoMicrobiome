@@ -1,0 +1,5 @@
+"phage_id"	"host_id"	"confidence"	"evidence"
+"Phage_01"	"Bacterium_01"	"high"	"Synthetic integration evidence"
+"Phage_02"	"Bacterium_02"	"high"	"Synthetic CRISPR evidence"
+"Phage_03"	"Bacterium_03"	"medium"	"Synthetic genus-level prediction"
+"Phage_04"	"Bacterium_04"	"low"	"Synthetic weak prediction"

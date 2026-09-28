@@ -1,0 +1,7 @@
+.Rhistory
+.RData
+*.Rcheck/
+*.tar.gz
+results/
+_freeze/
+.quarto/

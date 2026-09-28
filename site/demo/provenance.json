@@ -1,0 +1,38 @@
+{
+  "software": "chronomicrobiome",
+  "version": "0.1.0",
+  "status": "complete",
+  "started_utc": "2026-09-28 16:18:39 UTC",
+  "finished_utc": "2026-09-28 16:18:43 UTC",
+  "synthetic": true,
+  "input_md5": {
+    "metadata": "dc44f3c50916919862f3dff51329ff0e",
+    "bacteria": "fc419f539d14d7208ffe5243ed0c9d63",
+    "phages": "b4aa20e24ecb8bfa5ae05f811202c874",
+    "host_links": "f040191f71a513780191e38044f79a0b",
+    "config_file": "d20d90285867c0d78de0248d1cc45e88"
+  },
+  "input_paths": {
+    "metadata": "inst/extdata/semaglutide/metadata.tsv",
+    "bacteria": "inst/extdata/semaglutide/bacteria.tsv",
+    "phages": "inst/extdata/semaglutide/phages.tsv",
+    "host_links": "inst/extdata/semaglutide/host_links.tsv",
+    "config_file": "inst/extdata/semaglutide/study.yaml"
+  },
+  "packages": {
+    "nlme": "3.1.169",
+    "ggplot2": "4.0.3",
+    "yaml": "2.3.12",
+    "jsonlite": "2.0.0"
+  },
+  "report_engine": "quarto",
+  "seed": 20260928,
+  "notes": [
+    "Exploratory CLR mixed models estimate relative associations, not absolute abundance or causal drug effects.",
+    "Detection depends on sequencing depth; an observed zero is not proof of biological absence.",
+    "Diet, weight change, and gastrointestinal symptoms after exposure may be mediators; covariate selection defines the estimand.",
+    "Sensitivity covariates change the conditioning set; the sensitivity model is not a mediation or direct-effect analysis.",
+    "Residuals are conditionally independent given the random intercept; consider car1 for serial dependence."
+  ],
+  "publication_note": "Synthetic data only. Original absolute input paths are replaced with repository-relative paths for publication."
+}
