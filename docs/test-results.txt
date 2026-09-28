@@ -23,7 +23,7 @@ Computing persistence, return toward baseline, and host associations...
 Drawing figures and rendering the offline report...
 Report: [temporary-test-directory]/report.html
 [ FAIL 0 | WARN 0 | SKIP 0 | PASS 50 ]
-> 
+>
 > proc.time()
-   user  system elapsed 
-  3.450   0.114   3.579 
+   user  system elapsed
+  3.450   0.114   3.579

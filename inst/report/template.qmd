@@ -9,4 +9,3 @@ format:
     title-block-banner: false
     include-before-body: report-body.html
 ---
-
